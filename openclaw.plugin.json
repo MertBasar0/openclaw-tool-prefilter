@@ -5,13 +5,9 @@
   "categories": [
     "developer-tools"
   ],
-  "enabledByDefault": true,
   "activation": {
     "onStartup": true
   },
-  "hooks": [
-    "before_prompt_build"
-  ],
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
