@@ -38,6 +38,11 @@
   ],
   "author": "Mert Başar",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MertBasar0/openclaw-tool-prefilter.git"
+  },
+  "homepage": "https://github.com/MertBasar0/openclaw-tool-prefilter#readme",
   "openclaw": {
     "extensions": [
       "./dist/index.js"
@@ -50,6 +55,9 @@
     },
     "compat": {
       "pluginApi": ">=2026.9.0"
+    },
+    "build": {
+      "openclawVersion": "2026.9.5"
     }
   },
   "peerDependencies": {
