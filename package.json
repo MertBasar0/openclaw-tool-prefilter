@@ -1,6 +1,6 @@
 {
   "name": "openclaw-tool-prefilter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamic two-stage skill and tool pre-filtering for OpenClaw using Decision Models (Jev / TypeSafe) to reduce context bloat and eliminate tool hallucinations.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
