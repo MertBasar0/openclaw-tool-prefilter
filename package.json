@@ -1,0 +1,68 @@
+{
+  "name": "openclaw-tool-prefilter",
+  "version": "1.0.0",
+  "description": "Dynamic two-stage skill and tool pre-filtering for OpenClaw using Decision Models (Jev / TypeSafe) to reduce context bloat and eliminate tool hallucinations.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./openclaw.plugin.json": "./openclaw.plugin.json"
+  },
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "clawhub",
+    "jev",
+    "typesafe",
+    "decision-models",
+    "tool-prefilter",
+    "skill-filter",
+    "system-one",
+    "context-optimization",
+    "hallucination-prevention"
+  ],
+  "author": "Mert Başar",
+  "license": "MIT",
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "install": {
+      "npmSpec": "openclaw-tool-prefilter",
+      "clawhubSpec": "clawhub:openclaw-tool-prefilter",
+      "defaultChoice": "clawhub",
+      "minHostVersion": ">=2026.9.0"
+    },
+    "compat": {
+      "pluginApi": ">=2026.9.0"
+    }
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.9.0"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  }
+}
